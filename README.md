@@ -1,4 +1,4 @@
-# 🖥️ Windows 10 Exploitation & Privilege Escalation Lab
+# 🖥️ Windows 10 Exploitation & Privilage Escalation Lab
 
 ## 🎯 Objective
 
@@ -6,15 +6,17 @@ Simulate a real-world Windows 10 compromise by performing enumeration, SMB explo
 
 ---
 
-# 🔗 Attack Flow
+## ⚔️ Attack Chain
 
-- Network Enumeration (Nmap)
-- SMB Enumeration
-- SMB Authentication
-- Remote Command Execution (SMBExec)
-- Credential Dumping (SecretsDump)
-- Hash Cracking (John the Ripper)
-- SYSTEM-Level Access Achieved
+1. Host Discovery
+2. Port & Service Enumeration
+3. SMB Share Enumeration
+4. Authenticated SMB Access
+5. Remote Command Execution
+6. Credential Dumping
+7. NTLM Hash Extraction
+8. Password Cracking
+9. Privilege Escalation
 
 ---
 
@@ -35,12 +37,12 @@ This project demonstrates a complete Windows 10 exploitation workflow inside a s
 
 ---
 
-# 🏗️ Lab Environment
+## 🏗️ Lab Environment
 
-- Kali Linux (Attacker Machine)
+- Kali Linux (Attacker)
 - Windows 10 Target Machine
 - VirtualBox Internal Network
-- Isolated Testing Environment
+- SMB Enabled Environment
 
 ---
 
@@ -115,18 +117,19 @@ Cracked NTLM hashes using John the Ripper and recovered weak passwords.
 
 ---
 
-# 🧠 Skills Demonstrated
+## 🧠 Skills Demonstrated
 
 - Windows Enumeration
-- SMB Enumeration
+- SMB Exploitation
 - Remote Command Execution
 - Credential Dumping
 - NTLM Hash Cracking
-- Windows Privilege Escalation
-- Post-Exploitation Techniques
+- Post-Exploitation
+- Privilege Escalation Concepts
+- Impacket Tool Usage
 
 ---
 
-# ⚠️ Disclaimer
+## ⚠ Disclaimer
 
-This project was conducted in a self-hosted lab environment created for educational and ethical penetration testing purposes only.
+This project was performed in a self-hosted isolated lab environment for educational and ethical penetration testing purposes only.
