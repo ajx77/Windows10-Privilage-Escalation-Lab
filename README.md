@@ -1,4 +1,4 @@
-# 🖥️ Windows 10 Exploitation & Privilage Escalation Lab
+# 🖥️ Windows 10 Exploitation & Privilege Escalation Lab
 
 ## 🎯 Objective
 
@@ -6,17 +6,16 @@ Simulate a real-world Windows 10 compromise by performing enumeration, SMB explo
 
 ---
 
-## ⚔️ Attack Chain
+## ⚔️ Attack Flow
 
-1. Host Discovery
-2. Port & Service Enumeration
-3. SMB Share Enumeration
-4. Authenticated SMB Access
-5. Remote Command Execution
-6. Credential Dumping
-7. NTLM Hash Extraction
-8. Password Cracking
-9. Privilege Escalation
+1. Host Discovery & Service Enumeration
+2. SMB Share Enumeration
+3. Authenticated SMB Access
+4. Remote Command Execution via PsExec
+5. Credential Dumping using SecretsDump
+6. NTLM Hash Extraction
+7. Password Cracking using John the Ripper
+8. SYSTEM-Level Privilege Escalation
 
 ---
 
@@ -116,7 +115,6 @@ Cracked NTLM hashes using John the Ripper and recovered weak passwords.
 ✔ Full exploitation workflow demonstrated  
 
 ---
-
 ## 🧠 Skills Demonstrated
 
 - Windows Enumeration
@@ -124,9 +122,10 @@ Cracked NTLM hashes using John the Ripper and recovered weak passwords.
 - Remote Command Execution
 - Credential Dumping
 - NTLM Hash Cracking
+- Privilege Escalation
 - Post-Exploitation
-- Privilege Escalation Concepts
 - Impacket Tool Usage
+- Windows Security Concepts
 
 ---
 
